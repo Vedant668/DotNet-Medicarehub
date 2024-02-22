@@ -12229,19 +12229,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Akhilesh Awachat\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ASP.NET\\WebAppDemoStudent\\WebAppDemoStudent.csproj",
+      "projectUniqueName": "D:\\.NetFolder\\Akilesh_new_14\\MedicareHubProject\\WebAppDemoStudent\\WebAppDemoStudent.csproj",
       "projectName": "WebAppDemoStudent",
-      "projectPath": "D:\\ASP.NET\\WebAppDemoStudent\\WebAppDemoStudent.csproj",
-      "packagesPath": "C:\\Users\\Akhilesh Awachat\\.nuget\\packages\\",
-      "outputPath": "D:\\ASP.NET\\WebAppDemoStudent\\obj\\",
+      "projectPath": "D:\\.NetFolder\\Akilesh_new_14\\MedicareHubProject\\WebAppDemoStudent\\WebAppDemoStudent.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "D:\\.NetFolder\\Akilesh_new_14\\MedicareHubProject\\WebAppDemoStudent\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Akhilesh Awachat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

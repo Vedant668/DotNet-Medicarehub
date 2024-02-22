@@ -1,25 +1,14 @@
 ﻿@model IEnumerable<WebAppDemoStudent.Models.Booking>
-
+@using Microsoft.AspNetCore.Identity
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "GetAppointmentsByDoctor";
 }
-<br />
-<body class="Indexbg">
-@if ((User.IsInRole("patient")) || (User.IsInRole("admin"))) {
-    <h1>Booked Appointments</h1>
-    <p>
-        <a class="btn btn-primary" asp-action="Create">Create Appointment</a>
-    </p>
-}
-@if (User.IsInRole("doctor")){
-    <h1>Scheduled Appointments</h1>
-}
-    <br /><br />
 
 
+<h1>GetAppointmentsByDoctor</h1>
 
 
-<table class="table border-1 border-dark table-striped">
+<table class="table">
     <thead>
         <tr>
             <th>
@@ -38,7 +27,7 @@
                 @Html.DisplayNameFor(model => model.Symptoms)
             </th>
             <th>
-                    @Html.DisplayNameFor(model => model.Doctor)
+                @Html.DisplayNameFor(model => model.Doctor)
             </th>
             <th></th>
         </tr>
@@ -46,9 +35,9 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-                </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Date)
             </td>
@@ -65,12 +54,11 @@
                 @Html.DisplayFor(modelItem => item.Doctor)
             </td>
             <td>
-                    <a class="btn btn-success" asp-action="Edit" asp-route-id="@item.Id">Update</a> |
-                    @* <a class="btn btn-warning" asp-action="Details" asp-route-id="@item.Id">Details</a> | *@
-                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
-</body>
